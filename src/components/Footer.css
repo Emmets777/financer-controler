@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: var(--card);
+  border-top: 1px solid var(--accent-10);
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+}

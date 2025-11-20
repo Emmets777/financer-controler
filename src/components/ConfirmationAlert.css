@@ -1,0 +1,27 @@
+.ca-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 28px;
+  z-index: 1300;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  cursor: pointer;
+  transform-origin: bottom right;
+  animation: ca-in 360ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* types */
+.ca-success { background: linear-gradient(90deg,#10b981,#06b6d4); }
+.ca-warning { background: linear-gradient(90deg,#f59e0b,#fb923c); }
+.ca-confirm { background: linear-gradient(90deg,#7c3aed,#2563eb); }
+
+.ca-body { font-size: 0.95rem; }
+
+/* simple in animation and slight pop */
+@keyframes ca-in {
+  from { transform: translateY(14px) scale(.985); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}

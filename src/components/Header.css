@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background: var(--card);
+  border-bottom: 1px solid var(--accent-10);
+  text-align: center;
+}
+
+.header-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: var(--text);
+}

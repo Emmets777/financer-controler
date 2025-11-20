@@ -1,0 +1,114 @@
+/* reuse variables from your root */
+.main {
+  padding: var(--gap);
+}
+
+/* layout row */
+.panel-row {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 20px;
+}
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* small controls card */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+.control-top h2 {
+  margin: 0;
+  font-family: var(--font-title);
+}
+.saldo-value {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-top: 4px;
+}
+
+/* CategoryList styling hook - keep minimal because CategoryList.css exists */
+.category-list .category-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* confirm overlay (small) */
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px) saturate(120%);
+  background: rgba(4, 6, 10, 0.35);
+}
+.confirm-card {
+  width: min(420px, 92%);
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--accent-10);
+  color: var(--bg);
+  font-weight: 600;
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text);
+}
+
+/* small list on right */
+.small-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.small-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #00000018;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .panel-row {
+    grid-template-columns: 1fr;
+  }
+}

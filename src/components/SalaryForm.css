@@ -1,0 +1,54 @@
+.form-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.form-card h3 {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-input:focus {
+  border-color: var(--accent-10);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.form-btn {
+  margin-top: 6px;
+  width: 100%;
+  background: var(--accent-10);
+  color: var(--bg);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.form-btn:hover {
+  opacity: 0.9;
+}
