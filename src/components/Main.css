@@ -1,6 +1,6 @@
 /* reuse variables from your root */
-.main {
-  padding: var(--gap);
+.main-dashboard {
+  padding: 16px;
 }
 
 /* layout row */

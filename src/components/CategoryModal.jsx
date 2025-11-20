@@ -70,7 +70,6 @@ export default function CategoryModal({ isOpen, onClose, onSave, initialData }) 
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <header className="modal-header">
           <h3>{initialData ? "Editar Categoria" : "Nova Categoria"}</h3>
-          <button className="modal-x" onClick={handleClose} aria-label="Fechar">✕</button>
         </header>
 
         <form className="modal-body" onSubmit={handleSave}>

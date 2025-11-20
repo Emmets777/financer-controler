@@ -18,11 +18,12 @@ export default function SalaryForm({ salary, onSubmit }) {
       <input
         type="number"
         value={value}
+        autoComplete="off"
         placeholder="Digite seu salário"
         onChange={(e) => setValue(e.target.value)}
       />
 
-      <button type="submit">Salvar</button>
+      <button type="submit" className="form-btn">Salvar</button>
     </form>
   );
 }

@@ -3,7 +3,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <header className="header">
-      <h1 className="header-title">WalletCraft</h1>
+      <h1 className="header-title">Financer</h1>
     </header>
   );
 }

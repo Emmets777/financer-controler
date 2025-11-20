@@ -52,7 +52,7 @@ export default function CategoryForm({ remaining, onSubmit }) {
         />
       </label>
 
-      <button type="submit">Adicionar categoria</button>
+      <button type="submit" className="form-btn">Adicionar categoria</button>
     </form>
   );
 }
